@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <style>
+      *{
+          margin:0;
+          padding: 0;
+       }
+       body{
+           background-color: #000;
+           color: #666;
+           text-align: center;
+       }
+       audio {
+           width: 450px;
+           margin: 30px 0;
+       }
+       .container{
+           height: 420px;
+           margin: 0 auto;
+           overflow: hidden;
+           /* border: 2px solid #fff; */
+       }
+       ul.lrc-list {
+           /* border: 2px solid #fff; */
+           transition: all 0.5s;
+           list-style: none;
+       }
+       .lrc-list li {
+           height: 30px;
+           line-height: 30px;
+           transition: all 0.2s;
+       }
+       .lrc-list li.active{
+           color: #fff;
+           transform: scale(1.2);
+       }
+  </style>
+</head>
+<body>
+  <audio controls src="./music.mp3"></audio>
+  <div class="container">
+      <ul class="lrc-list">
+        <!-- li*30>lorem4  生成4个单词的乱数假文 -->
+         <li>Lorem, ipsum dolor.</li>
+         <li>Debitis, beatae dolorem?</li>
+         <li>Fuga, natus asperiores!</li>
+         <li>Laboriosam, ducimus consequatur.</li>
+         <li>Quaerat, accusamus optio.</li>
+         <li>Tempore, pariatur sequi?</li>
+         <li>At, esse? Eum?</li>
+         <li>Mollitia, non excepturi.</li>
+         <li>Fuga, veritatis dicta!</li>
+         <li>Unde, eius aperiam.</li>
+         <li>Libero, minima vel!</li>
+         <li>Nisi, vel ad!</li>
+         <li>Obcaecati, eaque id?</li>
+         <li>Consequatur, optio rem!</li>
+         <li>Quaerat, sequi adipisci.</li>
+         <li>Perferendis, cupiditate! Assumenda.</li>
+         <li>Voluptates, esse? Omnis.</li>
+         <li>Repellendus, vitae commodi!</li>
+         <li>Incidunt, commodi tenetur?</li>
+         <li>Voluptate, possimus. Ratione.</li>
+         <li>Distinctio, quasi at!</li>
+         <li>Natus, praesentium asperiores.</li>
+         <li>Quasi, nam voluptates?</li>
+         <li>Iusto, magni soluta?</li>
+         <li>Nam, officiis quis?</li>
+         <li>Dolores, quibusdam fugit.</li>
+         <li>Possimus, ipsum eligendi.</li>
+         <li>Dolore, ullam quisquam!</li>
+         <li>In, dolorem quas.</li>
+         <li>Sequi, autem optio.</li>
+      </ul>
+  </div>
+
+  <script>
+    var lrc =  `[00:01.06]难念的经
+                [00:03.95]演唱：周华健
+                [00:06.78]
+                [00:30.96]笑你我枉花光心计
+                [00:34.15]爱竞逐镜花那美丽
+                [00:36.75]怕幸运会转眼远逝
+                [00:39.32]为贪嗔喜恶怒着迷
+                [00:41.99]责你我太贪功恋势
+                [00:44.48]怪大地众生太美丽
+                [00:47.00]悔旧日太执信约誓
+                [00:49.66]为悲欢哀怨妒着迷
+                [00:52.56]啊 舍不得璀灿俗世
+                [00:57.66]啊 躲不开痴恋的欣慰
+                [01:02.86]啊 找不到色相代替
+                [01:08.09]啊 参一生参不透这条难题
+                [01:13.15]吞风吻雨葬落日未曾彷徨
+                [01:15.73]欺山赶海践雪径也未绝望
+                [01:18.23]拈花把酒偏折煞世人情狂
+                [01:20.90]凭这两眼与百臂或千手不能防
+                [01:23.76]天阔阔雪漫漫共谁同航
+                [01:26.09]这沙滚滚水皱皱笑着浪荡
+                [01:28.68]贪欢一刻偏教那女儿情长埋葬
+                [01:32.38]
+                [01:34.09]吞风吻雨葬落日未曾彷徨
+                [01:36.50]欺山赶海践雪径也未绝望
+                [01:39.07]拈花把酒偏折煞世人情狂
+                [01:41.69]凭这两眼与百臂或千手不能防
+                [01:44.68]天阔阔雪漫漫共谁同航
+                [01:46.93]这沙滚滚水皱皱笑着浪荡
+                [01:49.54]贪欢一刻偏教那女儿情长埋葬
+                [01:53.41]
+                [02:15.45]笑你我枉花光心计
+                [02:18.53]爱竞逐镜花那美丽
+                [02:21.14]怕幸运会转眼远逝
+                [02:23.76]为贪嗔喜恶怒着迷
+                [02:26.43]责你我太贪功恋势
+                [02:28.98]怪大地众生太美丽
+                [02:31.60]悔旧日太执信约誓
+                [02:34.26]为悲欢哀怨妒着迷
+                [02:36.90]啊 舍不得璀灿俗世
+                [02:42.04]啊 躲不开痴恋的欣慰
+                [02:47.34]啊 找不到色相代替
+                [02:52.52]啊 参一生参不透这条难题
+                [02:57.47]吞风吻雨葬落日未曾彷徨
+                [03:00.05]欺山赶海践雪径也未绝望
+                [03:02.64]拈花把酒偏折煞世人情狂
+                [03:05.27]凭这两眼与百臂或千手不能防
+                [03:08.22]天阔阔雪漫漫共谁同航
+                [03:10.49]这沙滚滚水皱皱笑着浪荡
+                [03:13.06]贪欢一刻偏教那女儿情长埋葬
+                [03:18.45]吞风吻雨葬落日未曾彷徨
+                [03:20.90]欺山赶海践雪径也未绝望
+                [03:23.54]拈花把酒偏折煞世人情狂
+                [03:26.21]凭这两眼与百臂或千手不能防
+                [03:29.07]天阔阔雪漫漫共谁同航
+                [03:31.32]这沙滚滚水皱皱笑着浪荡
+                [03:33.92]贪欢一刻偏教那女儿情长埋葬
+                [03:39.32]吞风吻雨葬落日未曾彷徨
+                [03:41.84]欺山赶海践雪径也未绝望
+                [03:44.38]拈花把酒偏折煞世人情狂
+                [03:47.04]凭这两眼与百臂或千手不能防
+                [03:49.99]天阔阔雪漫漫共谁同航
+                [03:52.20]这沙滚滚水皱皱笑着浪荡
+                [03:54.89]贪欢一刻偏教那女儿情长埋葬
+                [04:00.28]吞风吻雨葬落日未曾彷徨
+                [04:02.68]欺山赶海践雪径也未绝望
+                [04:05.25]拈花把酒偏折煞世人情狂
+                [04:07.90]凭这两眼与百臂或千手不能防
+                [04:10.85]天阔阔雪漫漫共谁同航
+                [04:13.08]这沙滚滚水皱皱笑着浪荡
+                [04:15.75]贪欢一刻偏教那女儿情长埋葬
+                [04:19.48]`;
+
+   /** 
+    * 解析歌词字符串 
+    * 得到一个歌词对象数组
+    *  {time：开始时间，words:歌词内容}
+    */
+   function parseLrc(lrc) {
+     const arr = lrc.split("\n");
+     const res = []
+     arr.forEach(item=>{      
+         //获取时间
+         let timeStr = item.trim().split("]")[0].substring(1); //00:01.06 
+       
+        res.push({
+            times: parseTime(timeStr),
+            words: item.trim().split("]")[1],
+        })
+     })
+
+     return res
+   }
+   /** 
+    * 将一个时间的字符串转为数字 : 总的秒数
+    * 01:13.15 转换为 73.15秒
+   */
+   function parseTime(timeStr) {
+     const minutes = +timeStr.split(":")[0]
+     const seconds = +timeStr.split(":")[1]
+     return minutes*60 + seconds
+   }
+   //处理好的歌词对应时间的数组
+   var lrcData = parseLrc(lrc)
+//    [
+//         {times: 1.06, words: '难念的经'}
+//         {times: 3.95, words: '演唱：周华健'}
+//         {times: 6.78, words: ''}
+//         {times: 30.96, words: '笑你我枉花光心计'}
+//         {times: 34.15, words: '爱竞逐镜花那美丽'}
+//         {times: 36.75, words: '怕幸运会转眼远逝'}
+//         {times: 39.32, words: '为贪嗔喜恶怒着迷'}
+//         {times: 41.99, words: '责你我太贪功恋势'}
+//         {times: 44.48, words: '怪大地众生太美丽'}
+//    ]
+   console.log(lrcData)
+
+   var dom = {
+       audio:document.querySelector('audio'),
+       ul:document.querySelector('.lrc-list'),
+       container : document.querySelector('.container')
+   }
+
+   /**
+    * 计算出当前根据播放器的进度，应该高亮哪句歌词，得到他的下标
+    */
+   function findIndex() {
+       //播放器当前时间
+      const curTime = dom.audio.currentTime;
+      const inx = lrcData.findIndex(item=>{
+          return item.times > curTime
+      })
+      //得出大于播放时间的那个歌词的索引 - 1就是当前应该播放的歌词索引
+      // 边界情况，如果是刚开始播放，播放时间为0  那么第一句歌词的时间肯定比0大 索引0 0-1 返回-1  是没问题的，就没有歌词高亮
+      //如果是播放到最后 那么item.times最后一个数字肯定也小于当前时间  没有找到 。那么inx直接会是 -1,直接让他停留在最后一句歌词上
+      console.log('inx',inx)
+      return inx == -1 ? lrcData.length - 1 : inx - 1
+   }
+
+   /**
+    * 创建歌词LI
+   */
+   function createLrcElement() {  
+ 
+    //创建一个文档片段，把LI一次性添加到DOM ，提升效率
+    let fragment = document.createDocumentFragment()
+
+    lrcData.forEach((item,i)=>{
+       var oLi = document.createElement('li');
+       oLi.textContent = item.words;
+       fragment.appendChild(oLi)
+    })
+    //清空之前的测试数据
+    dom.ul.innerHTML = ''
+    // 所有LI 一次性添加到ul的DOM中
+    dom.ul.appendChild(fragment)
+   }
+
+   createLrcElement()
+
+
+   /***
+    *设置UL的向上偏移量
+    * 
+    */
+   //容器高度
+   var containerHeight = dom.container.clientHeight;
+   // li的高度
+   var liHeight = dom.ul.children[0].clientHeight;
+   //最后几句歌词的时候最大的偏移量
+   var maxOffsetHeight = dom.ul.clientHeight  - containerHeight
+
+    function setOffset() {
+        var index = findIndex();
+        console.log(index)
+        //要把高亮的歌词放到屏幕居中显示 UL向上的偏移量 = 他距离UL顶部的距离 - 容器高度的一半的高度
+        //他距离UL顶部的距离 = 他前边所有li的高度之和 + LI自身高度的一半
+        var height1 = liHeight * index + liHeight / 2
+        var offset = height1 - containerHeight / 2
+        
+        //前几句歌词
+        if(offset < 0) offset = 0;
+
+        //后几句歌词
+        if(offset > maxOffsetHeight) offset = maxOffsetHeight;
+
+        dom.ul.style.transform = `translateY(-${offset}px)`
+        
+        if(dom.ul.querySelector(".active")) {
+            dom.ul.querySelector(".active").classList.remove('active')
+        }
+        
+        var li = dom.ul.children[index];
+        if(li) {
+            li.className = 'active'
+        }
+        
+    }
+
+
+
+
+   dom.audio.addEventListener('timeupdate', setOffset);
+   
+
+
+  </script>
+
+
+</body>
+</html>
